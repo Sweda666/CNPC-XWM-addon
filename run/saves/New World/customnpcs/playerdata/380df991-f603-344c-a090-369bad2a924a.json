@@ -1,0 +1,77 @@
+{
+    "bodyColor": 0,
+    "eyesColor": 0,
+    "ItemGiversList": [
+    ],
+    "body": 0,
+    "isActive": 0b,
+    "DialogData": [
+        {
+            "Dialog": 4
+        },
+        {
+            "Dialog": 5
+        }
+    ],
+    "leg": 0,
+    "hair": 0,
+    "MailData": [
+    ],
+    "PlayerName": "Dev",
+    "hairColor": 0,
+    "UUID": "380df991-f603-344c-a090-369bad2a924a",
+    "ScriptStoreddata": {
+    },
+    "TransportData": [
+    ],
+    "NpcsTimers": [
+    ],
+    "FactionData": [
+        {
+            "Points": 2000,
+            "Faction": 0
+        },
+        {
+            "Points": 1000,
+            "Faction": 1
+        }
+    ],
+    "BankData": [
+    ],
+    "jacket": 0,
+    "QuestData": {
+        "CompletedQuests": [
+            {
+                "Quest": 1,
+                "Date": 318691L
+            }
+        ],
+        "ActiveQuests": [
+            {
+                "QuestCompleted": 0b,
+                "ExtraData": {
+                },
+                "Quest": 1
+            },
+            {
+                "QuestCompleted": 1b,
+                "ExtraData": {
+                    "Killed": [
+                        {
+                            "Value": 1,
+                            "Slot": "猪"
+                        }
+                    ]
+                },
+                "Quest": 2
+            }
+        ]
+    },
+    "PlayerCompanionId": 0,
+    "shoes": 0,
+    "ItemGiverChained": [
+    ],
+    "isMale": 0b,
+    "face": 0,
+    "peculiarities": [I;]
+}

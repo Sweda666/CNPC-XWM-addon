@@ -1,0 +1,14 @@
+{
+  "mappings": {
+    "sweda/cnpc_xwm_addon/mixin/GuiQuestEditMixin": {
+      "init": "Lnoppes/npcs/client/gui/global/GuiQuestEdit;m_7856_()V"
+    }
+  },
+  "data": {
+    "searge": {
+      "sweda/cnpc_xwm_addon/mixin/GuiQuestEditMixin": {
+        "init": "Lnoppes/npcs/client/gui/global/GuiQuestEdit;m_7856_()V"
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Specification-Title: cnpc_xwm_addon
+Specification-Vendor: sweda
+Specification-Version: 1
+Implementation-Title: cnpc-xwm-addon
+Implementation-Version: 1.0-SNAPSHOT
+Implementation-Vendor: sweda
+Implementation-Timestamp: 2026-06-14T18:36:47+0800
+

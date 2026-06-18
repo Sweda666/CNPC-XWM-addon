@@ -1,0 +1,51 @@
+{
+    "CompleterNpc": "接取任务",
+    "NextQuestId": -1,
+    "RandomReward": 0b,
+    "QuestRepeat": 1,
+    "QuestCompletion": 0,
+    "Title": "击杀猪",
+    "Text": "测试",
+    "QuestFactionPoints": {
+        "DecreaseFaction1Points": 0b,
+        "OptionFaction2Points": 100,
+        "OptionFactions1": -1,
+        "OptionFactions2": -1,
+        "OptionFaction1Points": 100,
+        "DecreaseFaction2Points": 0b
+    },
+    "RewardExp": 0,
+    "QuestCommand": "",
+    "QuestDialogs": [
+        {
+            "Value": 1,
+            "Slot": "猪"
+        }
+    ],
+    "XwmWaypoint": {
+        "Color": 0,
+        "X": 20,
+        "Y": -60,
+        "Z": 7,
+        "Name": "任务地点"
+    },
+    "ModRev": 18,
+    "Type": 2,
+    "QuestMail": {
+        "Sender": "",
+        "BeenRead": 0b,
+        "Message": {
+        },
+        "MailItems": [
+        ],
+        "MailQuest": -1,
+        "TimePast": 1781673305797L,
+        "Time": 0L,
+        "Subject": ""
+    },
+    "Rewards": {
+        "NpcMiscInv": [
+        ]
+    },
+    "CompleteText": "测试"
+}
