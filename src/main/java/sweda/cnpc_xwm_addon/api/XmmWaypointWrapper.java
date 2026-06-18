@@ -2,7 +2,6 @@ package sweda.cnpc_xwm_addon.api;
 
 import net.minecraft.server.level.ServerPlayer;
 import noppes.npcs.api.entity.IPlayer;
-import noppes.npcs.controllers.ScriptContainer;
 import sweda.cnpc_xwm_addon.network.XWPacketHandler;
 import sweda.cnpc_xwm_addon.network.packet.XmmWaypointPacket;
 

@@ -1,6 +1,6 @@
 {
-  "advMode.xwm.waypoint": "地图路径点",
-  "advMode.xwm.waypointname": "地图路径点名称",
+  "advMode.xwm.waypoint": "导航路径点",
+  "advMode.xwm.waypointname": "导航路径点名称",
   "adv.gui.done&back": "保存并返回",
   "adv.gui.back": "返回",
   "adv.questposition": "任务地点",
@@ -21,5 +21,7 @@
   "gui.xaero_normal": "默认",
   "gui.xaero_death": "死亡",
   "gui.xaero_old_death": "旧死亡",
-  "gui.xaero_destination": "目的地"
+  "gui.xaero_destination": "目的地",
+  "adv.gui.xmmWaypointEnabled": "导航：启用",
+  "adv.gui.xmmWaypointDisabled": "导航：禁用"
 }
