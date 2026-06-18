@@ -7,8 +7,6 @@ import sweda.cnpc_xwm_addon.api.IXmmWaypoint;
 import sweda.cnpc_xwm_addon.api.XmmWaypointWrapper;
 import xaero.common.minimap.waypoints.Waypoint;
 
-import static com.ibm.icu.impl.ValidIdentifiers.Datatype.x;
-
 @Mixin(WrapperNpcAPI.class)
 public class WrapperNpcAPIMixin{
     @Unique

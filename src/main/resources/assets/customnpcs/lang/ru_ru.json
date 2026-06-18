@@ -1,3 +1,27 @@
 {
-  "advMode.xwm.waypoint": "Путевая точка на карте"
+  "advMode.xwm.waypoint": "Путевая точка",
+  "advMode.xwm.waypointname": "Название путевой точки",
+  "adv.gui.done&back": "Сохранить и назад",
+  "adv.gui.back": "Назад",
+  "adv.questposition": "Место задания",
+  "adv.gui.waypointcolor": "Цвет",
+  "adv.gui.waypointinitials": "Заголовок",
+  "adv.gui.waypointtype": "Тип",
+  "adv.gui.waypointtemp": "Временная",
+  "adv.gui.waypointyincluded": "3D",
+  "gui.xaero_black": "Чёрный",
+  "gui.xaero_dark_blue": "Тёмно-синий",
+  "gui.xaero_dark_green": "Тёмно-зелёный",
+  "gui.xaero_dark_aqua": "Бирюзовый",
+  "gui.xaero_dark_red": "Тёмно-красный",
+  "gui.xaero_dark_purple": "Тёмно-фиолетовый",
+  "gui.xaero_gold": "Золотой",
+  "gui.xaero_gray": "Серый",
+  "gui.xaero_blue": "Синий",
+  "gui.xaero_normal": "По умолчанию",
+  "gui.xaero_death": "Смерть",
+  "gui.xaero_old_death": "Старая смерть",
+  "gui.xaero_destination": "Назначение",
+  "adv.gui.xmmWaypointEnabled": "Путевая точка: Включена",
+  "adv.gui.xmmWaypointDisabled": "Путевая точка: Отключена"
 }

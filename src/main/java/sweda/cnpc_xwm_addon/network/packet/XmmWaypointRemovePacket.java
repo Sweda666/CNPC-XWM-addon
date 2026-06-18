@@ -22,7 +22,6 @@ public class XmmWaypointRemovePacket {
         this.z = z;
     }
 
-    // 原有 handle 方法签名、逻辑 完全保留
     public static void handle(XmmWaypointRemovePacket msg, Supplier<NetworkEvent.Context> ctx) {
         ctx.get().enqueueWork(() ->
                 DistExecutor.unsafeRunWhenOn(Dist.CLIENT, () -> () -> handlePacket(msg, ctx))
@@ -30,7 +29,6 @@ public class XmmWaypointRemovePacket {
         ctx.get().setPacketHandled(true);
     }
 
-    // 原有私有处理方法 完全保留
     private static void handlePacket(XmmWaypointRemovePacket msg, Supplier<NetworkEvent.Context> ctx) {
         int x = msg.x;
         int y = msg.y;
@@ -40,7 +38,6 @@ public class XmmWaypointRemovePacket {
         XmmWaypointCompatibility.removeWaypoint(x, y, z);
     }
 
-    // 原有 decode 静态解码 保留
     public static XmmWaypointRemovePacket decode(FriendlyByteBuf buf) {
         int x = buf.readInt();
         int y = buf.readInt();
@@ -48,7 +45,6 @@ public class XmmWaypointRemovePacket {
         return new XmmWaypointRemovePacket(x, y, z);
     }
 
-    // 原有 encode 静态编码 保留
     public static void encode(XmmWaypointRemovePacket msg, FriendlyByteBuf buf) {
         buf.writeInt(msg.x);
         buf.writeInt(msg.y);

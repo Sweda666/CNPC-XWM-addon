@@ -22,7 +22,6 @@ public class XmmWaypointPacket {
     private final boolean temp;
     private final boolean yIncluded;
 
-    // 原有构造方法 完全保留
     public XmmWaypointPacket(int x, int y, int z, String name, String initials, int color, int type, boolean temp, boolean yIncluded) {
         this.x = x;
         this.y = y;

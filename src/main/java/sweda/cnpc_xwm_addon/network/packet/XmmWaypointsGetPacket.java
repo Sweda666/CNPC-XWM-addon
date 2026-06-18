@@ -16,7 +16,6 @@ import java.util.function.Supplier;
 public class XmmWaypointsGetPacket {
     public static String invalid = "invalid";
 
-    // 【新增】客户端静态容器，用来存放读取到的路标列表
     public static final ArrayList<Waypoint> WAYPOINT_CACHE = new ArrayList<>();
 
     public XmmWaypointsGetPacket() {}

@@ -23,7 +23,6 @@ public abstract class GuiQuestEditMixin {
 
     @Inject(method = "init", at = @At("TAIL"))
     private void onQuestGuiInit(CallbackInfo ci) {
-        // 你的逻辑：GUI打开/初始化后执行
         GuiQuestEdit gui = (GuiQuestEdit) (Object) this;
         gui.addLabel(new GuiLabel(16, "advMode.xwm.waypoint", gui.guiLeft + 214, gui.guiTop + 74));
         gui.addButton(new GuiButtonNop(gui, 16, gui.guiLeft + 330, gui.guiTop + 69, 50, 20, "selectServer.edit"));

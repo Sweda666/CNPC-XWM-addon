@@ -1,3 +1,27 @@
 {
-  "advMode.xwm.waypoint": "XwmWayPoint"
+  "advMode.xwm.waypoint": "Waypoint",
+  "advMode.xwm.waypointname": "Waypoint Name",
+  "adv.gui.done&back": "Save & Back",
+  "adv.gui.back": "Back",
+  "adv.questposition": "Quest Location",
+  "adv.gui.waypointcolor": "Color",
+  "adv.gui.waypointinitials": "Title",
+  "adv.gui.waypointtype": "Type",
+  "adv.gui.waypointtemp": "Temporary",
+  "adv.gui.waypointyincluded": "3D",
+  "gui.xaero_black": "Black",
+  "gui.xaero_dark_blue": "Dark Blue",
+  "gui.xaero_dark_green": "Dark Green",
+  "gui.xaero_dark_aqua": "Cyan",
+  "gui.xaero_dark_red": "Dark Red",
+  "gui.xaero_dark_purple": "Dark Purple",
+  "gui.xaero_gold": "Gold",
+  "gui.xaero_gray": "Gray",
+  "gui.xaero_blue": "Blue",
+  "gui.xaero_normal": "Default",
+  "gui.xaero_death": "Death",
+  "gui.xaero_old_death": "Old Death",
+  "gui.xaero_destination": "Destination",
+  "adv.gui.xmmWaypointEnabled": "Waypoint: Enabled",
+  "adv.gui.xmmWaypointDisabled": "Waypoint: Disabled"
 }

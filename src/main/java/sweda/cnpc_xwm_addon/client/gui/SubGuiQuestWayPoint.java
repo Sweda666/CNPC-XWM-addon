@@ -175,7 +175,7 @@ public class SubGuiQuestWayPoint extends GuiBasic implements ITextfieldListener 
         );
         addButton(yIncludedButton);
 
-        addButton(new GuiButtonNop(this, 65, baseX + 212, baseY + 42, 40, 20, xmmWaypointEnabled ? "启用" : "禁用"));
+        addButton(new GuiButtonNop(this, 65, baseX + 212, baseY + 42, 40, 20, xmmWaypointEnabled ? "adv.gui.xmmWaypointEnabled" : "adv.gui.xmmWaypointDisabled"));
         addButton(new GuiButtonNop(this, 66, baseX + 212, baseY + 74, 40, 20, "adv.gui.back"));
         //addButton(new GuiButtonNop(this, 67, guiLeft + 144, guiTop + 160, 100, 20, "adv.gui.done&back"));
     }
@@ -184,7 +184,7 @@ public class SubGuiQuestWayPoint extends GuiBasic implements ITextfieldListener 
     public void buttonEvent(GuiButtonNop guibutton) {
         if (guibutton.id == 65) {
             xmmWaypointEnabled = !xmmWaypointEnabled;
-            guibutton.setDisplayText(xmmWaypointEnabled ? "启用" : "禁用");
+            guibutton.setDisplayText(xmmWaypointEnabled ? "adv.gui.xmmWaypointEnabled" : "adv.gui.xmmWaypointDisabled");
         }
         if (guibutton.id == 66) {
             onClose();
