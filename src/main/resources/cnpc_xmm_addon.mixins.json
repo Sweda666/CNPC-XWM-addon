@@ -1,9 +1,9 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "sweda.cnpc_xwm_addon.mixin",
-  "compatibilityLevel": "JAVA_8",
-  "refmap": "cnpc_xwm_addon.refmap.json",
+  "package": "sweda.cnpc_xmm_addon.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "cnpc_xmm_addon.refmap.json",
   "mixins": [
     "PlayerWrapperMixin",
     "QuestMixin",

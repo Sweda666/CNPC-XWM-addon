@@ -1,4 +1,4 @@
-package sweda.cnpc_xwm_addon.common;
+package sweda.cnpc_xmm_addon.common;
 
 @Deprecated
 public interface WaypointAccessor {

@@ -1,6 +1,6 @@
 {
-  "advMode.xwm.waypoint": "Waypoint",
-  "advMode.xwm.waypointname": "Waypoint Name",
+  "advMode.xmm.waypoint": "Waypoint",
+  "advMode.xmm.waypointname": "Waypoint Name",
   "adv.gui.done&back": "Save & Back",
   "adv.gui.back": "Back",
   "adv.questposition": "Quest Location",
@@ -23,5 +23,7 @@
   "gui.xaero_old_death": "Old Death",
   "gui.xaero_destination": "Destination",
   "adv.gui.xmmWaypointEnabled": "Waypoint: Enabled",
-  "adv.gui.xmmWaypointDisabled": "Waypoint: Disabled"
+  "adv.gui.xmmWaypointDisabled": "Waypoint: Disabled",
+  "adv.gui.waypointdimension": "Dimension ID (blank = current)",
+  "cnpc_xmm.command.waypoint_set": "Quest %s waypoint set to (%s, %s, %s) in %s"
 }

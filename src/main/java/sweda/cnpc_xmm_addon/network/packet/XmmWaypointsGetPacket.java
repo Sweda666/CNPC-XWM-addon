@@ -1,4 +1,4 @@
-package sweda.cnpc_xwm_addon.network.packet;
+package sweda.cnpc_xmm_addon.network.packet;
 
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraftforge.api.distmarker.Dist;
@@ -8,7 +8,7 @@ import net.minecraftforge.network.NetworkEvent;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.player.LocalPlayer;
 import xaero.common.minimap.waypoints.Waypoint;
-import sweda.cnpc_xwm_addon.client.XmmWaypointCompatibility;
+import sweda.cnpc_xmm_addon.client.XmmWaypointCompatibility;
 
 import java.util.ArrayList;
 import java.util.function.Supplier;

@@ -1,6 +1,6 @@
 {
-  "advMode.xwm.waypoint": "Путевая точка",
-  "advMode.xwm.waypointname": "Название путевой точки",
+  "advMode.xmm.waypoint": "Путевая точка",
+  "advMode.xmm.waypointname": "Название путевой точки",
   "adv.gui.done&back": "Сохранить и назад",
   "adv.gui.back": "Назад",
   "adv.questposition": "Место задания",
@@ -23,5 +23,7 @@
   "gui.xaero_old_death": "Старая смерть",
   "gui.xaero_destination": "Назначение",
   "adv.gui.xmmWaypointEnabled": "Путевая точка: Включена",
-  "adv.gui.xmmWaypointDisabled": "Путевая точка: Отключена"
+  "adv.gui.xmmWaypointDisabled": "Путевая точка: Отключена",
+  "adv.gui.waypointdimension": "ID измерения (пусто = текущее)",
+  "cnpc_xmm.command.waypoint_set": "Точка задания %s установлена: (%s, %s, %s), измерение: %s"
 }

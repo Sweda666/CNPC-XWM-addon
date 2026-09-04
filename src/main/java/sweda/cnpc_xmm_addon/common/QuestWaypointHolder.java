@@ -1,6 +1,6 @@
-package sweda.cnpc_xwm_addon.common;
+package sweda.cnpc_xmm_addon.common;
 
-import sweda.cnpc_xwm_addon.api.IXmmWaypoint;
+import sweda.cnpc_xmm_addon.api.IXmmWaypoint;
 
 public interface QuestWaypointHolder {
     IXmmWaypoint getWaypoint();

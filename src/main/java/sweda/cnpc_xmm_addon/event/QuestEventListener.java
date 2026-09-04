@@ -1,12 +1,12 @@
-package sweda.cnpc_xwm_addon.event;
+package sweda.cnpc_xmm_addon.event;
 
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import noppes.npcs.api.entity.IPlayer;
 import noppes.npcs.api.event.QuestEvent;
 import noppes.npcs.api.handler.data.IQuest;
-import sweda.cnpc_xwm_addon.api.IXmmWaypoint;
-import sweda.cnpc_xwm_addon.common.IPlayerWaypointHolder;
-import sweda.cnpc_xwm_addon.common.QuestWaypointHolder;
+import sweda.cnpc_xmm_addon.api.IXmmWaypoint;
+import sweda.cnpc_xmm_addon.common.IPlayerWaypointHolder;
+import sweda.cnpc_xmm_addon.common.QuestWaypointHolder;
 
 public class QuestEventListener {
 
@@ -15,7 +15,7 @@ public class QuestEventListener {
         IPlayer player = event.player;
         IQuest quest = event.quest;
 
-        QuestWaypointHolder holder = (QuestWaypointHolder) quest;
+        if (!(quest instanceof QuestWaypointHolder holder)) return;
         boolean enabled = holder.isXmmWaypointEnabled();
         if (!enabled) return;
         IXmmWaypoint wp = holder.getWaypoint();
@@ -29,12 +29,14 @@ public class QuestEventListener {
         IPlayer player = event.player;
         IQuest quest = event.quest;
 
-        QuestWaypointHolder holder = (QuestWaypointHolder) quest;
+        if (!(quest instanceof QuestWaypointHolder holder)) return;
         boolean enabled = holder.isXmmWaypointEnabled();
         if (!enabled) return;
         IXmmWaypoint wp = holder.getWaypoint();
         if (wp == null) return;
 
-        ((IPlayerWaypointHolder) player).removeWaypoint(wp);
+        if (player instanceof IPlayerWaypointHolder waypointHolder) {
+            waypointHolder.removeWaypoint(wp);
+        }
     }
 }

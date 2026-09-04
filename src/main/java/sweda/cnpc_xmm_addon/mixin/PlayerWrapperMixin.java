@@ -1,4 +1,4 @@
-package sweda.cnpc_xwm_addon.mixin;
+package sweda.cnpc_xmm_addon.mixin;
 
 import net.minecraft.server.level.ServerPlayer;
 import noppes.npcs.api.NpcAPI;
@@ -7,13 +7,13 @@ import noppes.npcs.api.wrapper.PlayerWrapper;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.Unique;
-import sweda.cnpc_xwm_addon.api.IXmmWaypoint;
-import sweda.cnpc_xwm_addon.api.XmmWaypointWrapper;
-import sweda.cnpc_xwm_addon.common.IPlayerWaypointHolder;
-import sweda.cnpc_xwm_addon.network.XWPacketHandler;
-import sweda.cnpc_xwm_addon.network.packet.XmmWaypointPacket;
-import sweda.cnpc_xwm_addon.network.packet.XmmWaypointRemovePacket;
-import sweda.cnpc_xwm_addon.network.packet.XmmWaypointsGetPacket;
+import sweda.cnpc_xmm_addon.api.IXmmWaypoint;
+import sweda.cnpc_xmm_addon.api.XmmWaypointWrapper;
+import sweda.cnpc_xmm_addon.common.IPlayerWaypointHolder;
+import sweda.cnpc_xmm_addon.network.XmmPacketHandler;
+import sweda.cnpc_xmm_addon.network.packet.XmmWaypointPacket;
+import sweda.cnpc_xmm_addon.network.packet.XmmWaypointRemovePacket;
+import sweda.cnpc_xmm_addon.network.packet.XmmWaypointsGetPacket;
 import xaero.common.minimap.waypoints.Waypoint;
 
 import java.util.ArrayList;
@@ -26,9 +26,15 @@ public abstract class PlayerWrapperMixin implements IPlayerWaypointHolder {
 
     @Unique
     public void addWaypoint(int x, int y, int z, String name, String initials, int color, int type, boolean temp, boolean yIncluded) {
+        addWaypoint((double) x, y, z, name, initials, color, type, temp, yIncluded);
+    }
+
+    @Unique
+    public void addWaypoint(double x, double y, double z, String name, String initials, int color, int type, boolean temp, boolean yIncluded) {
         ServerPlayer player = this.getMCEntity();
-        XmmWaypointPacket packet = new XmmWaypointPacket(x, y, z, name, initials, color, type, temp, yIncluded);
-        XWPacketHandler.sendToPlayer(packet, player);
+        String dimensionId = player.level().dimension().location().toString();
+        XmmWaypointPacket packet = new XmmWaypointPacket(x, y, z, name, initials, color, type, temp, yIncluded, dimensionId);
+        XmmPacketHandler.sendToPlayer(packet, player);
     }
 
     @Unique
@@ -64,22 +70,22 @@ public abstract class PlayerWrapperMixin implements IPlayerWaypointHolder {
     @Unique
     public ArrayList<Waypoint> getWaypoints() {
         ServerPlayer player = this.getMCEntity();
-        XWPacketHandler.sendToPlayer(new XmmWaypointsGetPacket(), player);
+        XmmPacketHandler.sendToPlayer(new XmmWaypointsGetPacket(), player);
         return XmmWaypointsGetPacket.WAYPOINT_CACHE;
     }
 
     @Unique
     public void removeWaypoint(IXmmWaypoint wp) {
         ServerPlayer player = this.getMCEntity();
-        XmmWaypointRemovePacket packet = new XmmWaypointRemovePacket(wp.getX(), wp.getY(), wp.getZ());
-        XWPacketHandler.sendToPlayer(packet, player);
+        XmmWaypointRemovePacket packet = new XmmWaypointRemovePacket(wp.getPreciseX(), wp.getPreciseY(), wp.getPreciseZ(), wp.getDimensionId());
+        XmmPacketHandler.sendToPlayer(packet, player);
     }
 
     @Unique
     public void removeWaypoint(int x, int y, int z) {
         ServerPlayer player = this.getMCEntity();
         XmmWaypointRemovePacket packet = new XmmWaypointRemovePacket(x, y, z);
-        XWPacketHandler.sendToPlayer(packet, player);
+        XmmPacketHandler.sendToPlayer(packet, player);
     }
 
     @Unique

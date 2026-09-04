@@ -1,4 +1,4 @@
-package sweda.cnpc_xwm_addon;
+package sweda.cnpc_xmm_addon;
 
 import net.minecraftforge.common.ForgeConfigSpec;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
