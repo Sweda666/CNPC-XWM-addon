@@ -50,3 +50,10 @@ The output JAR is written to `build/libs/`.
 ## License
 
 MIT
+
+## Screenshots
+
+<img width="1616" height="756" alt="Quest waypoint editor" src="https://github.com/user-attachments/assets/c2de497a-8a77-4e48-842e-b1276cb3c629" />
+<img width="1920" height="1146" alt="Quest waypoint settings" src="https://github.com/user-attachments/assets/cf1e87a7-851d-4d87-b431-5f6d48568df3" />
+<img width="1920" height="1146" alt="Waypoint configuration" src="https://github.com/user-attachments/assets/78d52b32-2a7b-46a0-8aff-34da3aea29ff" />
+<img width="1920" height="1146" alt="In-game waypoint" src="https://github.com/user-attachments/assets/6eaf6e6c-42a4-45a1-86ae-bada1aaf20e7" />
